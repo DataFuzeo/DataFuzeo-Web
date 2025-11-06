@@ -200,6 +200,10 @@ export function FeaturedCaseStudies() {
                       src={caseStudy.image || "/placeholder.svg"}
                       alt={caseStudy.title}
                       className="w-full rounded-xl shadow-2xl transition-transform duration-500 group-hover:scale-105"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = "/placeholder.svg";
+                      }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>

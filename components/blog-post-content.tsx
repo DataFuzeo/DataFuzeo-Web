@@ -66,6 +66,10 @@ export function BlogPostContent({ post }: BlogPostContentProps) {
               src={post.image}
               alt={post.title}
               className="w-full h-64 md:h-80 object-cover"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.src = "/placeholder.svg";
+              }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
           </div>

@@ -44,11 +44,15 @@ export function About() {
                 src="/ai-data-network-visualization.jpg"
                 alt="AI and Data Network Visualization"
                 className="w-full h-auto rounded-lg float-animation"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = "/placeholder.svg";
+                }}
               />
             </div>
 
             <ScrollAnimation delay={0.4} className="absolute -top-4 -right-4 glass p-4 rounded-lg">
-              <div className="text-2xl font-bold gradient-text">50+</div>
+              <div className="text-2xl font-bold gradient-text">500+</div>
               <div className="text-sm text-muted-foreground">Projects Delivered</div>
             </ScrollAnimation>
 

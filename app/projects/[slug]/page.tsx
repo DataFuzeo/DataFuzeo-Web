@@ -165,7 +165,7 @@ const caseStudies = {
   "aura-ai-project": {
     title: "AURA — AI-Powered Document Intelligence System",
     subtitle: "RAG + LangGraph Integration for Offline Document Reasoning",
-    image: "/aura1.png",
+    image: "/Aura1.png",
     client: "Internal R&D Project",
     duration: "6 weeks",
     team: "2 specialists",

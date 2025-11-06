@@ -104,6 +104,10 @@ export function CaseStudyHero({ caseStudy }: CaseStudyHeroProps) {
                 src={caseStudy.image || "/placeholder.svg"}
                 alt={caseStudy.title}
                 className="w-full h-[400px] object-cover"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = "/placeholder.svg";
+                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
             </div>

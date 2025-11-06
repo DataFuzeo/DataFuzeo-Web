@@ -81,7 +81,7 @@ const projects = [
     tags: ["Data Engineering", "Automation"],
     slug: "automated-data-pipeline",
     metrics: { throughput: "10M/day", latency: "<100ms" },
-  },
+  }
 ]
 
 interface ProjectsGridProps {

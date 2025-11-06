@@ -30,6 +30,10 @@ export function BlogPostHero({ post }: BlogPostHeroProps) {
           src={post.image}
           alt={post.title}
           className="w-full h-full object-cover opacity-10"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            target.src = "/placeholder.svg";
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/60" />
       </div>
