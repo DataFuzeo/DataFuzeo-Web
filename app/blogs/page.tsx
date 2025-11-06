@@ -1,3 +1,4 @@
+"use client"
 import { BlogHero } from "@/components/blog-hero"
 import { BlogGrid } from "@/components/blog-grid"
 import { BlogFilters } from "@/components/blog-filters"
